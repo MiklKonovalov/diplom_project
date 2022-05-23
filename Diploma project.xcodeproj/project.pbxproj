@@ -1,0 +1,694 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C662278C2833E746007B328E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C662278B2833E746007B328E /* AppDelegate.swift */; };
+		C662278E2833E746007B328E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C662278D2833E746007B328E /* SceneDelegate.swift */; };
+		C66227902833E746007B328E /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C662278F2833E746007B328E /* StartViewController.swift */; };
+		C66227952833E74F007B328E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C66227942833E74F007B328E /* Assets.xcassets */; };
+		C66227982833E74F007B328E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C66227962833E74F007B328E /* LaunchScreen.storyboard */; };
+		C66227A32833E750007B328E /* Diploma_projectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66227A22833E750007B328E /* Diploma_projectTests.swift */; };
+		C66227AE2833E750007B328E /* Diploma_projectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66227AD2833E750007B328E /* Diploma_projectUITests.swift */; };
+		C66227BD2833E896007B328E /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66227BC2833E896007B328E /* AppCoordinator.swift */; };
+		C66227C528352671007B328E /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66227C428352671007B328E /* RegistrationViewController.swift */; };
+		C66227C928353D45007B328E /* StartCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66227C828353D45007B328E /* StartCoordinator.swift */; };
+		C66227CD2836BFAF007B328E /* AppModulPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66227CC2836BFAE007B328E /* AppModulPresenter.swift */; };
+		C66227CF2836D3C4007B328E /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66227CE2836D3C4007B328E /* CoordinatorProtocol.swift */; };
+		C66227D22836D45F007B328E /* LoginCoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66227D12836D45F007B328E /* LoginCoordinatorProtocol.swift */; };
+		C66227D42836D69D007B328E /* PresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66227D32836D69D007B328E /* PresenterProtocol.swift */; };
+		C67BA2E1283BA0870010442F /* RegistrationCoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67BA2E0283BA0870010442F /* RegistrationCoordinatorProtocol.swift */; };
+		C67BA2E3283BA0D20010442F /* AuthorizationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67BA2E2283BA0D20010442F /* AuthorizationCoordinator.swift */; };
+		C67BA2E5283BA2000010442F /* AppModulPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67BA2E4283BA2000010442F /* AppModulPresenterProtocol.swift */; };
+		C67BA2E7283BA2470010442F /* StartModulPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67BA2E6283BA2470010442F /* StartModulPresenter.swift */; };
+		C67BA2E9283BA2890010442F /* StartModulPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67BA2E8283BA2890010442F /* StartModulPresenterProtocol.swift */; };
+		C67BA2EC283BAA7C0010442F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67BA2EB283BAA7C0010442F /* LoginViewController.swift */; };
+		C67BA2F1283BABFE0010442F /* LoginModulPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67BA2F0283BABFE0010442F /* LoginModulPresenter.swift */; };
+		C67BA2F3283BAC2E0010442F /* LoginModulPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67BA2F2283BAC2E0010442F /* LoginModulPresenterProtocol.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C662279F2833E74F007B328E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C66227802833E746007B328E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C66227872833E746007B328E;
+			remoteInfo = "Diploma project";
+		};
+		C66227AA2833E750007B328E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C66227802833E746007B328E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C66227872833E746007B328E;
+			remoteInfo = "Diploma project";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C66227882833E746007B328E /* Diploma project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Diploma project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C662278B2833E746007B328E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C662278D2833E746007B328E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C662278F2833E746007B328E /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		C66227942833E74F007B328E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C66227972833E74F007B328E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C66227992833E74F007B328E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C662279E2833E74F007B328E /* Diploma projectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Diploma projectTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C66227A22833E750007B328E /* Diploma_projectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Diploma_projectTests.swift; sourceTree = "<group>"; };
+		C66227A42833E750007B328E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C66227A92833E750007B328E /* Diploma projectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Diploma projectUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C66227AD2833E750007B328E /* Diploma_projectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Diploma_projectUITests.swift; sourceTree = "<group>"; };
+		C66227AF2833E750007B328E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C66227BC2833E896007B328E /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		C66227C428352671007B328E /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		C66227C828353D45007B328E /* StartCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartCoordinator.swift; sourceTree = "<group>"; };
+		C66227CC2836BFAE007B328E /* AppModulPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModulPresenter.swift; sourceTree = "<group>"; };
+		C66227CE2836D3C4007B328E /* CoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorProtocol.swift; sourceTree = "<group>"; };
+		C66227D12836D45F007B328E /* LoginCoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinatorProtocol.swift; sourceTree = "<group>"; };
+		C66227D32836D69D007B328E /* PresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterProtocol.swift; sourceTree = "<group>"; };
+		C67BA2E0283BA0870010442F /* RegistrationCoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationCoordinatorProtocol.swift; sourceTree = "<group>"; };
+		C67BA2E2283BA0D20010442F /* AuthorizationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationCoordinator.swift; sourceTree = "<group>"; };
+		C67BA2E4283BA2000010442F /* AppModulPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModulPresenterProtocol.swift; sourceTree = "<group>"; };
+		C67BA2E6283BA2470010442F /* StartModulPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartModulPresenter.swift; sourceTree = "<group>"; };
+		C67BA2E8283BA2890010442F /* StartModulPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartModulPresenterProtocol.swift; sourceTree = "<group>"; };
+		C67BA2EB283BAA7C0010442F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		C67BA2F0283BABFE0010442F /* LoginModulPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModulPresenter.swift; sourceTree = "<group>"; };
+		C67BA2F2283BAC2E0010442F /* LoginModulPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModulPresenterProtocol.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C66227852833E746007B328E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C662279B2833E74F007B328E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C66227A62833E750007B328E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C662277F2833E746007B328E = {
+			isa = PBXGroup;
+			children = (
+				C662278A2833E746007B328E /* Diploma project */,
+				C66227A12833E750007B328E /* Diploma projectTests */,
+				C66227AC2833E750007B328E /* Diploma projectUITests */,
+				C66227892833E746007B328E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C66227892833E746007B328E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C66227882833E746007B328E /* Diploma project.app */,
+				C662279E2833E74F007B328E /* Diploma projectTests.xctest */,
+				C66227A92833E750007B328E /* Diploma projectUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C662278A2833E746007B328E /* Diploma project */ = {
+			isa = PBXGroup;
+			children = (
+				C662278B2833E746007B328E /* AppDelegate.swift */,
+				C662278D2833E746007B328E /* SceneDelegate.swift */,
+				C66227CC2836BFAE007B328E /* AppModulPresenter.swift */,
+				C66227BE28351A5D007B328E /* StartModule */,
+				C66227C32835262F007B328E /* RegistrationModul */,
+				C67BA2EA283BAA470010442F /* LoginModul */,
+				C66227BB2833E781007B328E /* Coordinators */,
+				C66227942833E74F007B328E /* Assets.xcassets */,
+				C66227962833E74F007B328E /* LaunchScreen.storyboard */,
+				C66227992833E74F007B328E /* Info.plist */,
+			);
+			path = "Diploma project";
+			sourceTree = "<group>";
+		};
+		C66227A12833E750007B328E /* Diploma projectTests */ = {
+			isa = PBXGroup;
+			children = (
+				C66227A22833E750007B328E /* Diploma_projectTests.swift */,
+				C66227A42833E750007B328E /* Info.plist */,
+			);
+			path = "Diploma projectTests";
+			sourceTree = "<group>";
+		};
+		C66227AC2833E750007B328E /* Diploma projectUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C66227AD2833E750007B328E /* Diploma_projectUITests.swift */,
+				C66227AF2833E750007B328E /* Info.plist */,
+			);
+			path = "Diploma projectUITests";
+			sourceTree = "<group>";
+		};
+		C66227BB2833E781007B328E /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				C66227D02836D3DE007B328E /* Protocol */,
+				C66227BC2833E896007B328E /* AppCoordinator.swift */,
+				C66227C828353D45007B328E /* StartCoordinator.swift */,
+				C67BA2E2283BA0D20010442F /* AuthorizationCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		C66227BE28351A5D007B328E /* StartModule */ = {
+			isa = PBXGroup;
+			children = (
+				C66227D52836D6BE007B328E /* Protocol */,
+				C662278F2833E746007B328E /* StartViewController.swift */,
+				C67BA2E6283BA2470010442F /* StartModulPresenter.swift */,
+			);
+			path = StartModule;
+			sourceTree = "<group>";
+		};
+		C66227C32835262F007B328E /* RegistrationModul */ = {
+			isa = PBXGroup;
+			children = (
+				C66227C428352671007B328E /* RegistrationViewController.swift */,
+			);
+			path = RegistrationModul;
+			sourceTree = "<group>";
+		};
+		C66227D02836D3DE007B328E /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				C66227CE2836D3C4007B328E /* CoordinatorProtocol.swift */,
+				C66227D12836D45F007B328E /* LoginCoordinatorProtocol.swift */,
+				C67BA2E0283BA0870010442F /* RegistrationCoordinatorProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		C66227D52836D6BE007B328E /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				C66227D32836D69D007B328E /* PresenterProtocol.swift */,
+				C67BA2E4283BA2000010442F /* AppModulPresenterProtocol.swift */,
+				C67BA2E8283BA2890010442F /* StartModulPresenterProtocol.swift */,
+				C67BA2F2283BAC2E0010442F /* LoginModulPresenterProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		C67BA2EA283BAA470010442F /* LoginModul */ = {
+			isa = PBXGroup;
+			children = (
+				C67BA2EB283BAA7C0010442F /* LoginViewController.swift */,
+				C67BA2F0283BABFE0010442F /* LoginModulPresenter.swift */,
+			);
+			path = LoginModul;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C66227872833E746007B328E /* Diploma project */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C66227B22833E750007B328E /* Build configuration list for PBXNativeTarget "Diploma project" */;
+			buildPhases = (
+				C66227842833E746007B328E /* Sources */,
+				C66227852833E746007B328E /* Frameworks */,
+				C66227862833E746007B328E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Diploma project";
+			productName = "Diploma project";
+			productReference = C66227882833E746007B328E /* Diploma project.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C662279D2833E74F007B328E /* Diploma projectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C66227B52833E750007B328E /* Build configuration list for PBXNativeTarget "Diploma projectTests" */;
+			buildPhases = (
+				C662279A2833E74F007B328E /* Sources */,
+				C662279B2833E74F007B328E /* Frameworks */,
+				C662279C2833E74F007B328E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C66227A02833E74F007B328E /* PBXTargetDependency */,
+			);
+			name = "Diploma projectTests";
+			productName = "Diploma projectTests";
+			productReference = C662279E2833E74F007B328E /* Diploma projectTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C66227A82833E750007B328E /* Diploma projectUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C66227B82833E750007B328E /* Build configuration list for PBXNativeTarget "Diploma projectUITests" */;
+			buildPhases = (
+				C66227A52833E750007B328E /* Sources */,
+				C66227A62833E750007B328E /* Frameworks */,
+				C66227A72833E750007B328E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C66227AB2833E750007B328E /* PBXTargetDependency */,
+			);
+			name = "Diploma projectUITests";
+			productName = "Diploma projectUITests";
+			productReference = C66227A92833E750007B328E /* Diploma projectUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C66227802833E746007B328E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					C66227872833E746007B328E = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					C662279D2833E74F007B328E = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = C66227872833E746007B328E;
+					};
+					C66227A82833E750007B328E = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = C66227872833E746007B328E;
+					};
+				};
+			};
+			buildConfigurationList = C66227832833E746007B328E /* Build configuration list for PBXProject "Diploma project" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C662277F2833E746007B328E;
+			productRefGroup = C66227892833E746007B328E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C66227872833E746007B328E /* Diploma project */,
+				C662279D2833E74F007B328E /* Diploma projectTests */,
+				C66227A82833E750007B328E /* Diploma projectUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C66227862833E746007B328E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C66227982833E74F007B328E /* LaunchScreen.storyboard in Resources */,
+				C66227952833E74F007B328E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C662279C2833E74F007B328E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C66227A72833E750007B328E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C66227842833E746007B328E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C66227D22836D45F007B328E /* LoginCoordinatorProtocol.swift in Sources */,
+				C67BA2E1283BA0870010442F /* RegistrationCoordinatorProtocol.swift in Sources */,
+				C67BA2F1283BABFE0010442F /* LoginModulPresenter.swift in Sources */,
+				C67BA2E7283BA2470010442F /* StartModulPresenter.swift in Sources */,
+				C66227C928353D45007B328E /* StartCoordinator.swift in Sources */,
+				C66227C528352671007B328E /* RegistrationViewController.swift in Sources */,
+				C67BA2E5283BA2000010442F /* AppModulPresenterProtocol.swift in Sources */,
+				C66227902833E746007B328E /* StartViewController.swift in Sources */,
+				C662278C2833E746007B328E /* AppDelegate.swift in Sources */,
+				C67BA2E9283BA2890010442F /* StartModulPresenterProtocol.swift in Sources */,
+				C66227CF2836D3C4007B328E /* CoordinatorProtocol.swift in Sources */,
+				C67BA2F3283BAC2E0010442F /* LoginModulPresenterProtocol.swift in Sources */,
+				C66227BD2833E896007B328E /* AppCoordinator.swift in Sources */,
+				C66227CD2836BFAF007B328E /* AppModulPresenter.swift in Sources */,
+				C67BA2EC283BAA7C0010442F /* LoginViewController.swift in Sources */,
+				C67BA2E3283BA0D20010442F /* AuthorizationCoordinator.swift in Sources */,
+				C662278E2833E746007B328E /* SceneDelegate.swift in Sources */,
+				C66227D42836D69D007B328E /* PresenterProtocol.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C662279A2833E74F007B328E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C66227A32833E750007B328E /* Diploma_projectTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C66227A52833E750007B328E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C66227AE2833E750007B328E /* Diploma_projectUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C66227A02833E74F007B328E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C66227872833E746007B328E /* Diploma project */;
+			targetProxy = C662279F2833E74F007B328E /* PBXContainerItemProxy */;
+		};
+		C66227AB2833E750007B328E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C66227872833E746007B328E /* Diploma project */;
+			targetProxy = C66227AA2833E750007B328E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C66227962833E74F007B328E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C66227972833E74F007B328E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C66227B02833E750007B328E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C66227B12833E750007B328E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C66227B32833E750007B328E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 34VCU6GX65;
+				INFOPLIST_FILE = "Diploma project/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.miklKonovalov.Diploma-project";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C66227B42833E750007B328E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 34VCU6GX65;
+				INFOPLIST_FILE = "Diploma project/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.miklKonovalov.Diploma-project";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C66227B62833E750007B328E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 34VCU6GX65;
+				INFOPLIST_FILE = "Diploma projectTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.miklKonovalov.Diploma-projectTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Diploma project.app/Diploma project";
+			};
+			name = Debug;
+		};
+		C66227B72833E750007B328E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 34VCU6GX65;
+				INFOPLIST_FILE = "Diploma projectTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.miklKonovalov.Diploma-projectTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Diploma project.app/Diploma project";
+			};
+			name = Release;
+		};
+		C66227B92833E750007B328E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 34VCU6GX65;
+				INFOPLIST_FILE = "Diploma projectUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.miklKonovalov.Diploma-projectUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Diploma project";
+			};
+			name = Debug;
+		};
+		C66227BA2833E750007B328E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 34VCU6GX65;
+				INFOPLIST_FILE = "Diploma projectUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.miklKonovalov.Diploma-projectUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Diploma project";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C66227832833E746007B328E /* Build configuration list for PBXProject "Diploma project" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C66227B02833E750007B328E /* Debug */,
+				C66227B12833E750007B328E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C66227B22833E750007B328E /* Build configuration list for PBXNativeTarget "Diploma project" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C66227B32833E750007B328E /* Debug */,
+				C66227B42833E750007B328E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C66227B52833E750007B328E /* Build configuration list for PBXNativeTarget "Diploma projectTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C66227B62833E750007B328E /* Debug */,
+				C66227B72833E750007B328E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C66227B82833E750007B328E /* Build configuration list for PBXNativeTarget "Diploma projectUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C66227B92833E750007B328E /* Debug */,
+				C66227BA2833E750007B328E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C66227802833E746007B328E /* Project object */;
+}
