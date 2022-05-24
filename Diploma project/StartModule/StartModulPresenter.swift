@@ -8,10 +8,16 @@
 import Foundation
 import UIKit
 
+enum StartViewControllerButton {
+    case registrationButtonTapped
+    case loginButtonTapped
+}
+
 class StartModulPresenter: StartModulPresenterProtocol {
     
     var navigationController: UINavigationController
     var coordinator: CoordinatorProtocol?
+    var output: ((StartViewControllerButton) -> Void)?
     
     //Init
     
@@ -19,13 +25,16 @@ class StartModulPresenter: StartModulPresenterProtocol {
         self.navigationController = navigationController
         
         coordinator = AuthorizationCoordinator(navigationController: navigationController)
-        
     }
     
     //Functions
     
-    func openNextScreen() {
-        coordinator?.start()
+    func openRegistrationScreen() {
+        self.output?(.registrationButtonTapped)
+    }
+    
+    func openLoginScreen() {
+        self.output?(.loginButtonTapped)
     }
     
 }

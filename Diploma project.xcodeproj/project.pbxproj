@@ -17,7 +17,6 @@
 		C66227BD2833E896007B328E /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66227BC2833E896007B328E /* AppCoordinator.swift */; };
 		C66227C528352671007B328E /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66227C428352671007B328E /* RegistrationViewController.swift */; };
 		C66227C928353D45007B328E /* StartCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66227C828353D45007B328E /* StartCoordinator.swift */; };
-		C66227CD2836BFAF007B328E /* AppModulPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66227CC2836BFAE007B328E /* AppModulPresenter.swift */; };
 		C66227CF2836D3C4007B328E /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66227CE2836D3C4007B328E /* CoordinatorProtocol.swift */; };
 		C66227D22836D45F007B328E /* LoginCoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66227D12836D45F007B328E /* LoginCoordinatorProtocol.swift */; };
 		C66227D42836D69D007B328E /* PresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66227D32836D69D007B328E /* PresenterProtocol.swift */; };
@@ -65,7 +64,6 @@
 		C66227BC2833E896007B328E /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		C66227C428352671007B328E /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		C66227C828353D45007B328E /* StartCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartCoordinator.swift; sourceTree = "<group>"; };
-		C66227CC2836BFAE007B328E /* AppModulPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModulPresenter.swift; sourceTree = "<group>"; };
 		C66227CE2836D3C4007B328E /* CoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorProtocol.swift; sourceTree = "<group>"; };
 		C66227D12836D45F007B328E /* LoginCoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinatorProtocol.swift; sourceTree = "<group>"; };
 		C66227D32836D69D007B328E /* PresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterProtocol.swift; sourceTree = "<group>"; };
@@ -129,11 +127,10 @@
 			children = (
 				C662278B2833E746007B328E /* AppDelegate.swift */,
 				C662278D2833E746007B328E /* SceneDelegate.swift */,
-				C66227CC2836BFAE007B328E /* AppModulPresenter.swift */,
+				C66227BB2833E781007B328E /* Coordinators */,
 				C66227BE28351A5D007B328E /* StartModule */,
 				C66227C32835262F007B328E /* RegistrationModul */,
 				C67BA2EA283BAA470010442F /* LoginModul */,
-				C66227BB2833E781007B328E /* Coordinators */,
 				C66227942833E74F007B328E /* Assets.xcassets */,
 				C66227962833E74F007B328E /* LaunchScreen.storyboard */,
 				C66227992833E74F007B328E /* Info.plist */,
@@ -164,7 +161,6 @@
 			children = (
 				C66227D02836D3DE007B328E /* Protocol */,
 				C66227BC2833E896007B328E /* AppCoordinator.swift */,
-				C66227C828353D45007B328E /* StartCoordinator.swift */,
 				C67BA2E2283BA0D20010442F /* AuthorizationCoordinator.swift */,
 			);
 			path = Coordinators;
@@ -176,6 +172,7 @@
 				C66227D52836D6BE007B328E /* Protocol */,
 				C662278F2833E746007B328E /* StartViewController.swift */,
 				C67BA2E6283BA2470010442F /* StartModulPresenter.swift */,
+				C66227C828353D45007B328E /* StartCoordinator.swift */,
 			);
 			path = StartModule;
 			sourceTree = "<group>";
@@ -360,7 +357,6 @@
 				C66227CF2836D3C4007B328E /* CoordinatorProtocol.swift in Sources */,
 				C67BA2F3283BAC2E0010442F /* LoginModulPresenterProtocol.swift in Sources */,
 				C66227BD2833E896007B328E /* AppCoordinator.swift in Sources */,
-				C66227CD2836BFAF007B328E /* AppModulPresenter.swift in Sources */,
 				C67BA2EC283BAA7C0010442F /* LoginViewController.swift in Sources */,
 				C67BA2E3283BA0D20010442F /* AuthorizationCoordinator.swift in Sources */,
 				C662278E2833E746007B328E /* SceneDelegate.swift in Sources */,

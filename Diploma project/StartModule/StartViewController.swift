@@ -7,15 +7,10 @@
 
 import UIKit
 
-enum StartViewControllerButton {
-    case registrationButtonTapped
-    case loginButtonTapped
-}
-
-protocol ButtonTapProtocol {
-    func registrationButtonPressed()
-    func loginButtonPressed()
-}
+//enum StartViewControllerButton {
+//    case registrationButtonTapped
+//    case loginButtonTapped
+//}
 
 class StartViewController: UIViewController {
 
@@ -24,8 +19,6 @@ class StartViewController: UIViewController {
     let startModulPresenter: StartModulPresenter
     
     var output: ((StartViewControllerButton) -> Void)?
-    
-    var delegate: ButtonTapProtocol?
     
     private var coverImageView: UIImageView = {
         let image = UIImageView()
@@ -102,15 +95,13 @@ class StartViewController: UIViewController {
     //MARK: -Selectors
     
     @objc func registrationButtonPressed() {
-        startModulPresenter.openNextScreen()
-        delegate?.registrationButtonPressed()
-        self.output?(.registrationButtonTapped)
+        startModulPresenter.openRegistrationScreen()
+        //self.output?(.registrationButtonTapped)
     }
 
     @objc func loginButtonPressed() {
-        delegate?.loginButtonPressed()
-        startModulPresenter.openNextScreen()
-        self.output?(.loginButtonTapped)
+        startModulPresenter.openLoginScreen()
+        //self.output?(.loginButtonTapped)
     }
 }
 
