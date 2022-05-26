@@ -11,6 +11,6 @@ import UIKit
 protocol CoordinatorProtocol: AnyObject {
     var navigationController: UINavigationController { get }
     var childCoordinators: [CoordinatorProtocol] { get }
-    var presenter: PresenterProtocol? { get set }
     func start()
 }
+

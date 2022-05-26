@@ -1,15 +1,15 @@
 //
-//  LoginModulPresenter.swift
+//  ConfirmModulCoordinator.swift
 //  Diploma project
 //
-//  Created by Misha on 23.05.2022.
+//  Created by Misha on 25.05.2022.
 //
 
 import Foundation
 import UIKit
 
-final class LoginModulPresenter: LoginModulPresenterProtocol {
-    
+class ConfirmModulPresenter: ConfirmPresenterProtocol {
+
     var navigationController: UINavigationController
     var coordinator: CoordinatorProtocol?
     
@@ -18,14 +18,14 @@ final class LoginModulPresenter: LoginModulPresenterProtocol {
     init(navigationController: UINavigationController) {
         self.navigationController = navigationController
         
-        coordinator = LoginModulCoordinator(navigationController: navigationController, factory: LoginFactory())
+        coordinator = ConfirmModulCoordinator(navigationController: navigationController)
+        
     }
-    
-    //Functions
     
     func showNextScreen() {
-        coordinator?.start()
+        
+        
     }
-    
 }
+
 

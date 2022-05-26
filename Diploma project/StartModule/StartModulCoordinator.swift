@@ -8,11 +8,12 @@
 import Foundation
 import UIKit
 
-class StartCoordinator: LoginCoordinatorProtocol {
-    
+final class StartCoordinator: CoordinatorProtocol {
+        
     var navigationController: UINavigationController
     var childCoordinators: [CoordinatorProtocol] = []
-    var presenter: PresenterProtocol?
+    var presenter: StartModulPresenter?
+    
     
     //Init
     
@@ -20,17 +21,15 @@ class StartCoordinator: LoginCoordinatorProtocol {
         self.navigationController = navigationController
         
         presenter = StartModulPresenter(navigationController: navigationController)
-
     }
     
     //Functions
 
     func start() {
-        let startViewController = StartViewController(startModulPresenter: presenter as! StartModulPresenter)
+        let startViewController = StartViewController(startModulPresenter: presenter!)
         
-        let startModulPresenter = StartModulPresenter(navigationController: navigationController)
         
-        startModulPresenter.output = { [weak self] action in
+        presenter?.output = { [weak self] action in
             switch action {
             case .registrationButtonTapped:
                 self?.showRegistrationViewController()
@@ -45,13 +44,15 @@ class StartCoordinator: LoginCoordinatorProtocol {
     }
     
     private func showRegistrationViewController() {
-        let registrationViewController = RegistrationViewController()
+        let registrationModulPresenter = RegistrationModulPresenter(navigationController: navigationController)
+        let registrationViewController = RegistrationViewController(registrationModulPresenter: registrationModulPresenter)
         registrationViewController.view.backgroundColor = .white
         self.navigationController.pushViewController(registrationViewController, animated: true)
     }
     
     private func showLoginViewController() {
-        let loginViewController = LoginViewController()
+        let loginModulPresenter = LoginModulPresenter(navigationController: navigationController)
+        let loginViewController = LoginViewController(loginModulPresenter: loginModulPresenter)
         loginViewController.view.backgroundColor = .white
         self.navigationController.pushViewController(loginViewController, animated: true)
     }

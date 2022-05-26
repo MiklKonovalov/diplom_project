@@ -7,12 +7,7 @@
 
 import UIKit
 
-//enum StartViewControllerButton {
-//    case registrationButtonTapped
-//    case loginButtonTapped
-//}
-
-class StartViewController: UIViewController {
+final class StartViewController: UIViewController {
 
     //MARK: -Properties
     
@@ -96,12 +91,10 @@ class StartViewController: UIViewController {
     
     @objc func registrationButtonPressed() {
         startModulPresenter.openRegistrationScreen()
-        //self.output?(.registrationButtonTapped)
     }
 
     @objc func loginButtonPressed() {
         startModulPresenter.openLoginScreen()
-        //self.output?(.loginButtonTapped)
     }
 }
 

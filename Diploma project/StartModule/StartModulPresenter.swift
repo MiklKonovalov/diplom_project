@@ -13,7 +13,7 @@ enum StartViewControllerButton {
     case loginButtonTapped
 }
 
-class StartModulPresenter: StartModulPresenterProtocol {
+final class StartModulPresenter: StartModulPresenterProtocol {
     
     var navigationController: UINavigationController
     var coordinator: CoordinatorProtocol?
@@ -23,8 +23,7 @@ class StartModulPresenter: StartModulPresenterProtocol {
     
     init(navigationController: UINavigationController) {
         self.navigationController = navigationController
-        
-        coordinator = AuthorizationCoordinator(navigationController: navigationController)
+    
     }
     
     //Functions

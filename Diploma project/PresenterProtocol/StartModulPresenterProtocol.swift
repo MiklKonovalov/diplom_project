@@ -8,7 +8,6 @@
 import Foundation
 
 protocol StartModulPresenterProtocol: PresenterProtocol {
-    
     func openRegistrationScreen()
     func openLoginScreen()
 }

@@ -1,19 +1,17 @@
 //
-//  LoginModulPresenter.swift
+//  RegistrationModulPresenter.swift
 //  Diploma project
 //
-//  Created by Misha on 23.05.2022.
+//  Created by Misha on 24.05.2022.
 //
 
 import Foundation
 import UIKit
 
-final class LoginModulPresenter: LoginModulPresenterProtocol {
+class RegistrationModulPresenter: RegistrationModulPresenterProtocol {
     
     var navigationController: UINavigationController
     var coordinator: CoordinatorProtocol?
-    
-    //Init
     
     init(navigationController: UINavigationController) {
         self.navigationController = navigationController
@@ -21,11 +19,19 @@ final class LoginModulPresenter: LoginModulPresenterProtocol {
         coordinator = LoginModulCoordinator(navigationController: navigationController, factory: LoginFactory())
     }
     
-    //Functions
-    
     func showNextScreen() {
         coordinator?.start()
     }
     
+    func showPreviousScreen() {
+        coordinator?.dismiss()
+    }
+    
 }
 
+extension CoordinatorProtocol {
+    func dismiss() {
+        navigationController.dismiss(animated: true, completion: nil)
+        navigationController.popToRootViewController(animated: true)
+    }
+}
